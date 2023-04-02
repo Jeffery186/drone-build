@@ -26,7 +26,7 @@ jobs:
           path: drone/
 
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: ibook163/drone
           username: ${{ secrets.DOCKER_USERNAME }}
