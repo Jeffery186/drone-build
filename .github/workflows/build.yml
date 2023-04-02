@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: drone-server
-          path: release/linux/amd64/drone-server
+          path: drone/
 
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
