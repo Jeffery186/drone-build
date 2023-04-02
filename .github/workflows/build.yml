@@ -20,7 +20,7 @@ jobs:
           go build -o ../release/linux/amd64/drone-server -ldflags "-extldflags \"-static\"" -tags "nolimit" github.com/drone/drone/cmd/drone-server
 
       - name: Upload Bin
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: drone-server
           path: drone/
